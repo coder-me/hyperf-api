@@ -38,7 +38,12 @@ namespace App\Controller;
 
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\Snowflake\IdGeneratorInterface;
+use Hyperf\HttpServer\Annotation\AutoController;
 
+
+/**
+ * @AutoController()
+ */
 class IndexController extends BaseController
 {
     /**
@@ -82,7 +87,7 @@ class IndexController extends BaseController
 
         return [
             'method' => $method,
-            'message' => "Hello {$user}." . $this->idGenerator->generate(),
+            'message' => "Hello {$user}11111." . $this->idGenerator->generate(),
         ];
     }
 }
