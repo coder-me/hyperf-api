@@ -25,10 +25,10 @@ return [
             'sock_type' => SWOOLE_SOCK_TCP,
             'callbacks' => [
                 SwooleEvent::ON_REQUEST => [Hyperf\HttpServer\Server::class, 'onRequest'],
-                SwooleEvent::ON_START => [JieaoServer::class, 'onStart'],
-                SwooleEvent::ON_WORKER_START => [JieaoServer::class, 'onWorkerStart'],
+                // SwooleEvent::ON_START => [JieaoServer::class, 'onStart'],
+                // SwooleEvent::ON_WORKER_START => [JieaoServer::class, 'onWorkerStart'],
             ],
-        ],
+        ]
     ],
     'settings' => [
 //        'daemonize' => 1,
